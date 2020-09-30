@@ -1,0 +1,1903 @@
+<div class="">
+    <section class="main-part">
+        <ngb-carousel [interval]="1000" *ngIf="images" [showNavigationIndicators]="false">
+            <ng-template ngbSlide *ngFor="let img of images">
+                <div class="row" [ngStyle]="img.myStyles">
+                    <div class="col-12 col-lg-6 order-lg-1 order-0">
+                        <div class="picsum-img-wrapper">
+                            <img [src]="img.img" alt="Random second slide" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 order-lg-0 order-1">
+                        <div class="carousel-caption">
+                            <h3>Second slide label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </section>
+    <section class="bg-light px-4 mb-5">
+        <ngb-carousel [interval]="1000" *ngIf="images" [showNavigationIndicators]="false"
+            [showNavigationArrows]="showNavigationArrows">
+            <ng-template ngbSlide>
+                <div class="row">
+                    <a class="col-2 my-2 text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto text-center">{{foods[0].name}}</p>
+                        </div>
+                    </a>
+                    <a class="col-2  my-2  text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto text-center">{{foods[1].name}}</p>
+                        </div>
+                    </a>
+                    <a class="col-2  my-2  text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto text-center">{{foods[2].name}}</p>
+                        </div>
+                    </a>
+                    <a class="col-2  my-2  text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto text-center">{{foods[3].name}}</p>
+                        </div>
+                    </a>
+                    <a class="col-2  my-2  text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto text-center">{{foods[4].name}}</p>
+                        </div>
+                    </a>
+                    <a class="col-2  my-2  text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto text-center">{{foods[5].name}}</p>
+                        </div>
+                    </a>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="row">
+                    <a class="col-2  my-2  text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto">{{foods[7].name}}</p>
+                        </div>
+                    </a>
+                    <a class="col-2  my-2  text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto text-center">{{foods[8].name}}</p>
+                        </div>
+                    </a>
+                    <a class="col-2  my-2  text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto text-center">{{foods[9].name}}</p>
+                        </div>
+                    </a>
+                    <a class="col-2  my-2  text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto text-center">{{foods[10].name}}</p>
+                        </div>
+                    </a>
+                    <a class="col-2  my-2  text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto text-center">{{foods[11].name}}</p>
+                        </div>
+                    </a>
+                    <a class="col-2  my-2  text-center" href="#">
+                        <div class="picsum-img-wrapper">
+                            <img src="" alt="Random slide">
+                            <p class="m-auto text-center">{{foods[12].name}}</p>
+                        </div>
+                    </a>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </section>
+    <section class="container-fluid">
+        <div class="womenCat my-5">
+            <div class="row h-auto">
+                <div class="col-lg-4 col-12">
+                    <div class="row" style="height:40rem">
+                        <div class="col-12 h-25">
+                            <div class="h-100 p-4" style="background-color: #f6f7f9;">
+                                <h1 class="">Shop for Babies</h1>
+                                <h3 class="">30% to 40% off</h3>
+                            </div>
+                        </div>
+                        <div class="col-12 h-75">
+                            <img src="../../../assets/img/home/categories/cat-lg02.jpg" alt="" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <ngb-carousel *ngIf="images" [interval]="1000" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+                        <ng-template ngbSlide *ngFor="let image of images">
+                            <div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[0].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[1].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[2].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[3].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[4].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[5].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide *ngFor="let image of images">
+                            <div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[6].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[7].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[8].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[9].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[10].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[11]" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+            </div>
+        </div>
+        <div class="womenCat my-5">
+            <div class="row h-auto">
+                <div class="col-lg-8 col-12">
+                    <ngb-carousel [interval]="1000" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+                        <ng-template ngbSlide ngFor="let menitem of men_prio">
+                          <div class="picsum-img-wrapper">
+                            <div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="men_prio_1[0].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="men_prio_1[1].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="men_prio_1[2].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="men_prio_1[3].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="men_prio_1[4].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="men_prio_1[5].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper">
+                              <div>
+                                  <div class="row">
+                                      <div class="col-4">
+                                          <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                              <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                              <img [src]="women_prio_2[0].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                              <div class="card-body w-100">
+                                                  <div class="">
+                                                      <p class="my-auto">
+                                                          <span class="material-icons">
+                                                              star_border
+                                                          </span>
+                                                          <span class="material-icons">
+                                                              star_half
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                      <div class="ID50_Off_sc">
+                                                          Ishin Cotton Silk Golden Woven Design
+                                                      </div>
+                                                      <span>...</span> 
+                                                  </div>
+                                                  <div class="d-flex">
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-dark">
+                                                              850
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-secondary">
+                                                              1200
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                          <span class="">
+                                                              50
+                                                          </span>%
+                                                          <span class="">
+                                                              Off
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                              <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                              <img [src]="men_prio_1[1].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                              <div class="card-body w-100">
+                                                  <div class="">
+                                                      <p class="my-auto">
+                                                          <span class="material-icons">
+                                                              star_border
+                                                          </span>
+                                                          <span class="material-icons">
+                                                              star_half
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                      <div class="ID50_Off_sc">
+                                                          Ishin Cotton Silk Golden Woven Design
+                                                      </div>
+                                                      <span>...</span> 
+                                                  </div>
+                                                  <div class="d-flex">
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-dark">
+                                                              850
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-secondary">
+                                                              1200
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                          <span class="">
+                                                              50
+                                                          </span>%
+                                                          <span class="">
+                                                              Off
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-4">
+                                          <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                              <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                              <img [src]="men_prio_2[2].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                              <div class="card-body w-100">
+                                                  <div class="">
+                                                      <p class="my-auto">
+                                                          <span class="material-icons">
+                                                              star_border
+                                                          </span>
+                                                          <span class="material-icons">
+                                                              star_half
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                      <div class="ID50_Off_sc">
+                                                          Ishin Cotton Silk Golden Woven Design
+                                                      </div>
+                                                      <span>...</span> 
+                                                  </div>
+                                                  <div class="d-flex">
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-dark">
+                                                              850
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-secondary">
+                                                              1200
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                          <span class="">
+                                                              50
+                                                          </span>%
+                                                          <span class="">
+                                                              Off
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                              <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                              <img [src]="men_prio_2[3].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                              <div class="card-body w-100">
+                                                  <div class="">
+                                                      <p class="my-auto">
+                                                          <span class="material-icons">
+                                                              star_border
+                                                          </span>
+                                                          <span class="material-icons">
+                                                              star_half
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                      <div class="ID50_Off_sc">
+                                                          Ishin Cotton Silk Golden Woven Design
+                                                      </div>
+                                                      <span>...</span> 
+                                                  </div>
+                                                  <div class="d-flex">
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-dark">
+                                                              850
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-secondary">
+                                                              1200
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                          <span class="">
+                                                              50
+                                                          </span>%
+                                                          <span class="">
+                                                              Off
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-4">
+                                          <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                              <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                              <img [src]="men_prio_2[4].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                              <div class="card-body w-100">
+                                                  <div class="">
+                                                      <p class="my-auto">
+                                                          <span class="material-icons">
+                                                              star_border
+                                                          </span>
+                                                          <span class="material-icons">
+                                                              star_half
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                      <div class="ID50_Off_sc">
+                                                          Ishin Cotton Silk Golden Woven Design
+                                                      </div>
+                                                      <span>...</span> 
+                                                  </div>
+                                                  <div class="d-flex">
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-dark">
+                                                              850
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-secondary">
+                                                              1200
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                          <span class="">
+                                                              50
+                                                          </span>%
+                                                          <span class="">
+                                                              Off
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                              <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                              <img [src]="men_prio_[5].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                              <div class="card-body w-100">
+                                                  <div class="">
+                                                      <p class="my-auto">
+                                                          <span class="material-icons">
+                                                              star_border
+                                                          </span>
+                                                          <span class="material-icons">
+                                                              star_half
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                      <div class="ID50_Off_sc">
+                                                          Ishin Cotton Silk Golden Woven Design
+                                                      </div>
+                                                      <span>...</span> 
+                                                  </div>
+                                                  <div class="d-flex">
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-dark">
+                                                              850
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto">
+                                                          <span class="material-icons">
+                                                          </span>
+                                                          <span class="font-weight-bold text-secondary">
+                                                              1200
+                                                          </span>
+                                                      </p>
+                                                      <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                          <span class="">
+                                                              50
+                                                          </span>%
+                                                          <span class="">
+                                                              Off
+                                                          </span>
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </ng-template>
+                    </ngb-carousel>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="row" style="height:40rem">
+                        <div class="col-12 h-25">
+                            <div class="h-100 p-4" style="background-color: #f6f7f9;">
+                                <h1 class="">Shop for men</h1>
+                                <h3 class="">MIn 40% off</h3>
+                            </div>
+                        </div>
+                        <div class="col-12 h-75">
+                            <img src="../../../assets/img/home/categories/cat-lg01.jpg" alt="" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="womenCat my-5">
+            <div class="row h-auto">
+                <div class="col-lg-4 col-12">
+                    <div class="row" style="height:40rem">
+                        <div class="col-12 h-25">
+                            <div class="h-100 p-4" style="background-color: #f6f7f9;">
+                                <h1 class="">Shop for Babies</h1>
+                                <h3 class="">30% to 40% off</h3>
+                            </div>
+                        </div>
+                        <div class="col-12 h-75">
+                            <img src="../../../assets/img/home/categories/cat-lg03.jpg" alt="" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <ngb-carousel *ngIf="images" [interval]="1000" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+                        <ng-template ngbSlide *ngFor="let image of images">
+                            <div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[0].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[1].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[2].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[3].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[4].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[6].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide *ngFor="let image of images">
+                            <div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[0].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[1].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[2].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[3].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="women_prio_1[4].img" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 mx-auto" style="width:80%; height:20rem">
+                                            <span class="material-icons Icon_metro-favorite fav"> favorite_border </span>
+                                            <img [src]="" class="card-img-top m-auto" alt="..." style="height:60%">
+                                            <div class="card-body w-100">
+                                                <div class="">
+                                                    <p class="my-auto">
+                                                        <span class="material-icons">
+                                                            star_border
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star_half
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                    <div class="ID50_Off_sc">
+                                                        Ishin Cotton Silk Golden Woven Design
+                                                    </div>
+                                                    <span>...</span> 
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-dark">
+                                                            850
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto">
+                                                        <span class="material-icons">
+                                                        </span>
+                                                        <span class="font-weight-bold text-secondary">
+                                                            1200
+                                                        </span>
+                                                    </p>
+                                                    <p class="m-auto Ishin_Cotton_Silk_Golden_Woven_qt">
+                                                        <span class="">
+                                                            50
+                                                        </span>%
+                                                        <span class="">
+                                                            Off
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

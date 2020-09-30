@@ -1,0 +1,72 @@
+
+.main-part{
+    width:100%;
+}
+
+.carousel-caption{
+    position: relative;
+    text-align: center;
+    /* right: 0; */
+    bottom: 0;
+    z-index: 1;
+    padding-top: 5%;
+    /* padding-bottom: 0; */
+}
+
+@media (min-width: 992px){
+    .main-part .carousel-caption{
+        padding-top: 50%;
+        text-align: left;
+        left: 20%;
+    }
+}
+
+ul{
+    list-style-type: none;
+    width:100%;
+    overflow: scroll hidden;
+}
+
+a{
+    color: #495057;
+}
+
+.food-link{
+    padding: 1rem 2rem;
+}
+
+ a:hover{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 2px !important;
+    height: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: #dadbdd;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #acadad; 
+    border-radius: 10px;
+  }
+  
+  .Ishin_Cotton_Silk_Golden_Woven_qt{
+    font-weight: bold;
+    color: rgba(51,102,103,1);
+  }
+
+  .ID50_Off_sc{
+    height: 30px;
+    overflow: hidden;
+  }
+
+  .fav{
+    position: absolute;
+    top: 0;
+    right:0;
+  }

@@ -1,0 +1,9 @@
+
+app-home{
+    position: relative;
+    width:100%;
+}
+
+ol.carousel-indicators{
+    display: none !important;
+}

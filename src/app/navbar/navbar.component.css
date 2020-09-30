@@ -1,0 +1,155 @@
+header ul{
+    list-style-type: none;
+}
+
+.search-icon{
+    border-top-right-radius: .25rem!important;
+    border-bottom-right-radius: .25rem!important;
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    background-color: rgba(240,183,189,1);
+    color: #fff;
+    height: 63px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.search-icon span{
+    font-size: 50px;
+
+}
+
+.search-list{
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    height: 63px;
+}
+
+a{
+    color:#495057;
+}
+
+a:hover {
+    color: rgba(254,105,106,0.3);
+    text-decoration: none;
+}
+
+a.active{
+    color: rgba(254,105,106,0.3);
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+
+.Parama_Fashion {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    color: rgba(255,1,62,1);
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+
+.ID44990513_3151436744898408_84 {
+    width: 65px;
+    height: 63px;
+    /* left: 0px; */
+    /* top: 9px; */
+    /* overflow: visible; */
+}
+
+.Looking_Beautiful_Everyday_ {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(51,102,103,1);
+    margin-bottom: 0;
+}
+
+.btn:focus,.form-control:focus {
+    outline: 0;
+    box-shadow: none !important;
+    border-color: #dee2e6!important;
+    
+    /* border-top-right-radius: 0;
+    border-bottom-right-radius: 0; */
+}
+
+.btn:focus{
+    border: 0;
+}
+
+
+.india{
+    width: 58px;
+    height: 35px;
+    margin: 0.5rem 0;
+}
+
+.Icon_feather-phone-call{
+    font-size: 34px;
+    margin-left: 1rem;
+}
+
+.ID91-0000000000{
+    position: absolute;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    color: rgba(0,0,0,1);
+}
+
+.nav-item:focus,.nav-item:active{
+    outline:none;
+}
+
+.navbar-light .navbar-nav .nav-link:focus{
+    outline:none;
+}
+
+.nav-cat{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(51,102,103,1) !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.download{
+    width: 31px;
+    height: 31px;
+}
+
+
+.cart-text{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+
+.ID000{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(7,94,84,1);
+    font-family: Segoe UI;
+}
+
+.badge{
+    background-color: rgba(240,183,189,1);
+    color: rgba(124,24,48,1);
+    position: absolute;
+    top:0;
+    height:20px;
+    width:20px;
+}

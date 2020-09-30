@@ -1,0 +1,116 @@
+<header class="container-fluid">
+    <div class="mx-lg-4 my-2">
+        <ul class="row">
+            <li class="col-lg-4 col-6 order-0">
+                <div class="d-flex">
+                    <div>
+                        <img class="ID44990513_3151436744898408_84"
+                            src="../../assets/img/ID44990513_3151436744898408_84.png">
+                    </div>
+                    <div class="ml-2">
+                        <p class="Parama_Fashion">Parama Fashion</p>
+                        <p class="Looking_Beautiful_Everyday_">Looking Beautiful Everyday !</p>
+                    </div>
+                </div>
+                <!-- <a class="nav-link py-0" href="#">
+                    <img src="../../../assets/img/home/hero-slider/01.jpg" alt="" style="height: 50px; width:50px;">
+                </a> -->
+            </li>
+            <li class="col-lg-3 col-6 order-lg-2 d-flex py-3">
+                <img src="../../assets/img/india.png" class="india" alt="">
+                <button class="btn p-0">
+                    <span class="material-icons Icon_feather-phone-call">
+                        phone_in_talk
+                    </span>
+                    <span class="ID91-0000000000">
+                        +91-0000000000
+                    </span>
+                </button>
+            </li>
+            <li class="col-lg-5 col-12 order-lg-1">
+                <div class="input-group-overlay d-flex py-2">
+                    <div class="input-group-prepend border rounded-left">
+                        <div ngbDropdown class="d-inline-block">
+                            <button class="btn h-100" id="dropdownBasic1" ngbDropdownToggle>
+                                <span> All Categories</span>
+                                <span class="material-icons">
+                                    arrow_drop_down
+                                </span>
+                            </button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <button ngbDropdownItem>Action - 1</button>
+                                <button ngbDropdownItem>Another Action</button>
+                                <button ngbDropdownItem>Something else is here</button>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="form-control appended-form-control search-list border-right-0" type="text"
+                        placeholder="Search entire store here....">
+                    <div class="input-group-append-overlay">
+                        <span class="input-group-text search-icon border-left-0">
+                            <span class="material-icons">
+                                search
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- <ul class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+            <li class="btn" id="dropdownManual" *ngFor="let item of navs" (mouseover)="myDrop.open()"
+                (mouseout)="myDrop.close()">{{item}}</li>
+            <div ngbDropdownMenu aria-labelledby="dropdownManual">
+                <button ngbDropdownItem>Action - 1</button>
+                <button ngbDropdownItem>Another Action</button>
+                <button ngbDropdownItem>Something else is here</button>
+            </div>
+        </ul> -->
+        <nav class="navbar d-lg-block d-none navbar-expand-lg navbar-light bg-white px-0">
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item" ngbDropdown *ngFor="let item of navs">
+                        <a class="nav-link nav-cat" tabindex="0" ngbDropdownToggle id="navbarDropdown1" role="button">
+                            {{item}}
+                        </a>
+                        <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+                            <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+                            <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+                            <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a class="nav-link border" id="dropdownBasic1">
+                            <img src="../../assets/img/download.png" class="download" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link border" href="#">
+                            <span class="material-icons Icon_metro-favorite">
+                                favorite_border
+                            </span>
+                            <span class="badge rounded-circle">9</span>
+                        </a>
+                    </li>
+                    <li class="nav-item pl-2">
+                        <a class="" href="#">
+                            <div class="d-flex">
+                                <div class="border p-2">
+                                    <span class="material-icons Icon_metro-favorite">
+                                        shopping_cart
+                                    </span>
+                                    <span class="badge rounded-circle">9</span>
+                                </div>
+                                <div class="border py-2">
+                                    <span class="m-2 cart-text">My Cart</span>
+                                    <span class="m-2 ID000">$1234.5</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
